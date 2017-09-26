@@ -1,0 +1,6 @@
+framework module Pods_Wen {
+  umbrella header "Pods-Wen-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21029DC61E95AE3B00A6EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DC51E95AE3B00A6EF61 /* AppDelegate.swift */; };
+		21029DC81E95AE3B00A6EF61 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DC71E95AE3B00A6EF61 /* ScheduleController.swift */; };
+		21029DCD1E95AE3B00A6EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21029DCC1E95AE3B00A6EF61 /* Assets.xcassets */; };
+		21029DD01E95AE3B00A6EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21029DCE1E95AE3B00A6EF61 /* LaunchScreen.storyboard */; };
+		21029DDB1E95AE3C00A6EF61 /* WenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DDA1E95AE3C00A6EF61 /* WenTests.swift */; };
+		21029DE91E95B2A200A6EF61 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DE81E95B2A200A6EF61 /* Time.swift */; };
+		21029DEB1E95B2A800A6EF61 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DEA1E95B2A800A6EF61 /* Event.swift */; };
+		21029DED1E95B2B900A6EF61 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DEC1E95B2B900A6EF61 /* DaySchedule.swift */; };
+		21029DEF1E95B47000A6EF61 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DEE1E95B47000A6EF61 /* ScheduleCell.swift */; };
+		21029DF41E95B4C000A6EF61 /* AgendaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DF01E95B4C000A6EF61 /* AgendaLayout.swift */; };
+		21029DF61E95B4C000A6EF61 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DF21E95B4C000A6EF61 /* AgendaCell.swift */; };
+		21029DF71E95B4C000A6EF61 /* ScheduleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DF31E95B4C000A6EF61 /* ScheduleTable.swift */; };
+		21029DFB1E95B76100A6EF61 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DFA1E95B76100A6EF61 /* Extensions.swift */; };
+		21029DFE1E95BF9500A6EF61 /* ScheduleCellHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21029DFD1E95BF9500A6EF61 /* ScheduleCellHeaderView.swift */; };
+		2145BF2F1E99B2FE00C0B784 /* RegisterOrgNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145BF2E1E99B2FE00C0B784 /* RegisterOrgNameController.swift */; };
+		21597A891E970348000217B4 /* GoogleNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21597A881E970348000217B4 /* GoogleNetworkManager.swift */; };
+		21597A911E971724000217B4 /* AppNavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21597A901E971724000217B4 /* AppNavigationDrawerController.swift */; };
+		21597A931E971773000217B4 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21597A921E971773000217B4 /* LeftViewController.swift */; };
+		21597AB41E9827B2000217B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21597AB31E9827B2000217B4 /* GoogleService-Info.plist */; };
+		21597AB71E9833D9000217B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21597AB61E9833D9000217B4 /* NetworkManager.swift */; };
+		2192C8BD1E96DBD100F081BF /* AppSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192C8BC1E96DBD100F081BF /* AppSearchBarController.swift */; };
+		2192C8BF1E96E19A00F081BF /* ScheduleController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192C8BE1E96E19A00F081BF /* ScheduleController + Extensions.swift */; };
+		21A279B41E99E0A4004C9FDF /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279B31E99E0A4004C9FDF /* CreateNavigationController.swift */; };
+		21A279B61E99E805004C9FDF /* GeneralRegisterOrganizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279B51E99E805004C9FDF /* GeneralRegisterOrganizationController.swift */; };
+		21A279B81E99E982004C9FDF /* RegisterOrgPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279B71E99E982004C9FDF /* RegisterOrgPhotoController.swift */; };
+		21A279BA1E9ADB6D004C9FDF /* SyncOrgEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279B91E9ADB6D004C9FDF /* SyncOrgEventsController.swift */; };
+		21A279BC1E9AE4ED004C9FDF /* ProgressSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279BB1E9AE4ED004C9FDF /* ProgressSettings.swift */; };
+		21A279C21E9B2720004C9FDF /* OrganizationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279C11E9B2720004C9FDF /* OrganizationSearchController.swift */; };
+		21A279C51E9B3CD8004C9FDF /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A279C41E9B3CD8004C9FDF /* Organization.swift */; };
+		67C3E479C9891896B15A2013 /* Pods_Wen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E07A0880DB67984997A741F /* Pods_Wen.framework */; };
+		EA8071F4F904F6E29EE7B033 /* Pods_WenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1B509B08E81ED08C4ABFA3 /* Pods_WenTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21029DD71E95AE3B00A6EF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21029DBA1E95AE3B00A6EF61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21029DC11E95AE3B00A6EF61;
+			remoteInfo = Wen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21029DC21E95AE3B00A6EF61 /* Wen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21029DC51E95AE3B00A6EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21029DC71E95AE3B00A6EF61 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		21029DCC1E95AE3B00A6EF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21029DCF1E95AE3B00A6EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21029DD11E95AE3B00A6EF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21029DD61E95AE3B00A6EF61 /* WenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21029DDA1E95AE3C00A6EF61 /* WenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WenTests.swift; sourceTree = "<group>"; };
+		21029DDC1E95AE3C00A6EF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21029DE81E95B2A200A6EF61 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		21029DEA1E95B2A800A6EF61 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		21029DEC1E95B2B900A6EF61 /* DaySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		21029DEE1E95B47000A6EF61 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		21029DF01E95B4C000A6EF61 /* AgendaLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaLayout.swift; sourceTree = "<group>"; };
+		21029DF21E95B4C000A6EF61 /* AgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
+		21029DF31E95B4C000A6EF61 /* ScheduleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTable.swift; sourceTree = "<group>"; };
+		21029DFA1E95B76100A6EF61 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		21029DFD1E95BF9500A6EF61 /* ScheduleCellHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCellHeaderView.swift; sourceTree = "<group>"; };
+		2145BF2E1E99B2FE00C0B784 /* RegisterOrgNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOrgNameController.swift; sourceTree = "<group>"; };
+		21597A881E970348000217B4 /* GoogleNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleNetworkManager.swift; sourceTree = "<group>"; };
+		21597A8A1E970C02000217B4 /* Wen-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wen-Briding-Header.h"; sourceTree = "<group>"; };
+		21597A901E971724000217B4 /* AppNavigationDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationDrawerController.swift; sourceTree = "<group>"; };
+		21597A921E971773000217B4 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		21597AB31E9827B2000217B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21597AB61E9833D9000217B4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2192C8BC1E96DBD100F081BF /* AppSearchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSearchBarController.swift; sourceTree = "<group>"; };
+		2192C8BE1E96E19A00F081BF /* ScheduleController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScheduleController + Extensions.swift"; sourceTree = "<group>"; };
+		21A279B31E99E0A4004C9FDF /* CreateNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
+		21A279B51E99E805004C9FDF /* GeneralRegisterOrganizationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRegisterOrganizationController.swift; sourceTree = "<group>"; };
+		21A279B71E99E982004C9FDF /* RegisterOrgPhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterOrgPhotoController.swift; sourceTree = "<group>"; };
+		21A279B91E9ADB6D004C9FDF /* SyncOrgEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncOrgEventsController.swift; sourceTree = "<group>"; };
+		21A279BB1E9AE4ED004C9FDF /* ProgressSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressSettings.swift; sourceTree = "<group>"; };
+		21A279C11E9B2720004C9FDF /* OrganizationSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationSearchController.swift; sourceTree = "<group>"; };
+		21A279C41E9B3CD8004C9FDF /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		2779FB3C5368CEDFB26FBC62 /* Pods-WenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WenTests/Pods-WenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E07A0880DB67984997A741F /* Pods_Wen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5823C865980A2E4C5866AB7 /* Pods-WenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WenTests/Pods-WenTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF1B509B08E81ED08C4ABFA3 /* Pods_WenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C520DCE3709F34B511799736 /* Pods-Wen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wen/Pods-Wen.release.xcconfig"; sourceTree = "<group>"; };
+		FC83A867B3FB96CCE14B50E9 /* Pods-Wen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wen/Pods-Wen.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21029DBF1E95AE3B00A6EF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3E479C9891896B15A2013 /* Pods_Wen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21029DD31E95AE3B00A6EF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8071F4F904F6E29EE7B033 /* Pods_WenTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21029DB91E95AE3B00A6EF61 = {
+			isa = PBXGroup;
+			children = (
+				7859368745FF1A7E074F837A /* Frameworks */,
+				37232017FEA14953E88026ED /* Pods */,
+				21029DC31E95AE3B00A6EF61 /* Products */,
+				21029DC41E95AE3B00A6EF61 /* Wen */,
+				21029DD91E95AE3C00A6EF61 /* WenTests */,
+				21597A8A1E970C02000217B4 /* Wen-Briding-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		21029DC31E95AE3B00A6EF61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21029DC21E95AE3B00A6EF61 /* Wen.app */,
+				21029DD61E95AE3B00A6EF61 /* WenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21029DC41E95AE3B00A6EF61 /* Wen */ = {
+			isa = PBXGroup;
+			children = (
+				2145BF2D1E99B2D600C0B784 /* Create Organization */,
+				21597A871E970019000217B4 /* Google */,
+				2192C8BA1E96DB9000F081BF /* Home */,
+				21597A8F1E97170F000217B4 /* Master */,
+				21A279C31E9B3CCC004C9FDF /* Model */,
+				21597AB51E982E15000217B4 /* Side Panel  */,
+				21029DC51E95AE3B00A6EF61 /* AppDelegate.swift */,
+				21029DCC1E95AE3B00A6EF61 /* Assets.xcassets */,
+				21029DFA1E95B76100A6EF61 /* Extensions.swift */,
+				21597AB31E9827B2000217B4 /* GoogleService-Info.plist */,
+				21029DD11E95AE3B00A6EF61 /* Info.plist */,
+				21029DCE1E95AE3B00A6EF61 /* LaunchScreen.storyboard */,
+				21597AB61E9833D9000217B4 /* NetworkManager.swift */,
+				21A279BB1E9AE4ED004C9FDF /* ProgressSettings.swift */,
+			);
+			path = Wen;
+			sourceTree = "<group>";
+		};
+		21029DD91E95AE3C00A6EF61 /* WenTests */ = {
+			isa = PBXGroup;
+			children = (
+				21029DDC1E95AE3C00A6EF61 /* Info.plist */,
+				21029DDA1E95AE3C00A6EF61 /* WenTests.swift */,
+			);
+			path = WenTests;
+			sourceTree = "<group>";
+		};
+		21029DE51E95B1EB00A6EF61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21029DEC1E95B2B900A6EF61 /* DaySchedule.swift */,
+				21029DEA1E95B2A800A6EF61 /* Event.swift */,
+				21029DE81E95B2A200A6EF61 /* Time.swift */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21029DF81E95B4C300A6EF61 /* ScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				21029DFC1E95BF8400A6EF61 /* AgendaCell */,
+				21029DEE1E95B47000A6EF61 /* ScheduleCell.swift */,
+				21029DFD1E95BF9500A6EF61 /* ScheduleCellHeaderView.swift */,
+			);
+			name = ScheduleCell;
+			path = ScheduleCell;
+			sourceTree = "<group>";
+		};
+		21029DF91E95B5B400A6EF61 /* ScheduleController */ = {
+			isa = PBXGroup;
+			children = (
+				21029DE51E95B1EB00A6EF61 /* Model */,
+				21029DF81E95B4C300A6EF61 /* ScheduleCell */,
+				2192C8BE1E96E19A00F081BF /* ScheduleController + Extensions.swift */,
+				21029DC71E95AE3B00A6EF61 /* ScheduleController.swift */,
+			);
+			name = ScheduleController;
+			path = ScheduleController;
+			sourceTree = "<group>";
+		};
+		21029DFC1E95BF8400A6EF61 /* AgendaCell */ = {
+			isa = PBXGroup;
+			children = (
+				21029DF21E95B4C000A6EF61 /* AgendaCell.swift */,
+				21029DF01E95B4C000A6EF61 /* AgendaLayout.swift */,
+				21029DF31E95B4C000A6EF61 /* ScheduleTable.swift */,
+			);
+			name = AgendaCell;
+			path = AgendaCell;
+			sourceTree = "<group>";
+		};
+		2145BF2D1E99B2D600C0B784 /* Create Organization */ = {
+			isa = PBXGroup;
+			children = (
+				21A279B31E99E0A4004C9FDF /* CreateNavigationController.swift */,
+				21A279B51E99E805004C9FDF /* GeneralRegisterOrganizationController.swift */,
+				2145BF2E1E99B2FE00C0B784 /* RegisterOrgNameController.swift */,
+				21A279B71E99E982004C9FDF /* RegisterOrgPhotoController.swift */,
+				21A279B91E9ADB6D004C9FDF /* SyncOrgEventsController.swift */,
+			);
+			name = "Create Organization";
+			path = "Create Organization";
+			sourceTree = "<group>";
+		};
+		21597A871E970019000217B4 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				21597A881E970348000217B4 /* GoogleNetworkManager.swift */,
+			);
+			name = Google;
+			path = Google;
+			sourceTree = "<group>";
+		};
+		21597A8F1E97170F000217B4 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				21597A901E971724000217B4 /* AppNavigationDrawerController.swift */,
+			);
+			name = Master;
+			path = Master;
+			sourceTree = "<group>";
+		};
+		21597AB51E982E15000217B4 /* Side Panel  */ = {
+			isa = PBXGroup;
+			children = (
+				21597A921E971773000217B4 /* LeftViewController.swift */,
+			);
+			name = "Side Panel ";
+			path = "Side Panel ";
+			sourceTree = "<group>";
+		};
+		2192C8BA1E96DB9000F081BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				21029DF91E95B5B400A6EF61 /* ScheduleController */,
+				21A279BF1E9B254C004C9FDF /* Search */,
+				2192C8BC1E96DBD100F081BF /* AppSearchBarController.swift */,
+			);
+			name = Home;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		21A279BF1E9B254C004C9FDF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				21A279C11E9B2720004C9FDF /* OrganizationSearchController.swift */,
+			);
+			name = Search;
+			path = Search;
+			sourceTree = "<group>";
+		};
+		21A279C31E9B3CCC004C9FDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21A279C41E9B3CD8004C9FDF /* Organization.swift */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37232017FEA14953E88026ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC83A867B3FB96CCE14B50E9 /* Pods-Wen.debug.xcconfig */,
+				C520DCE3709F34B511799736 /* Pods-Wen.release.xcconfig */,
+				2779FB3C5368CEDFB26FBC62 /* Pods-WenTests.debug.xcconfig */,
+				A5823C865980A2E4C5866AB7 /* Pods-WenTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7859368745FF1A7E074F837A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E07A0880DB67984997A741F /* Pods_Wen.framework */,
+				BF1B509B08E81ED08C4ABFA3 /* Pods_WenTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21029DC11E95AE3B00A6EF61 /* Wen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21029DDF1E95AE3C00A6EF61 /* Build configuration list for PBXNativeTarget "Wen" */;
+			buildPhases = (
+				4FB13EAAD469377E45F95E18 /* [CP] Check Pods Manifest.lock */,
+				21029DBE1E95AE3B00A6EF61 /* Sources */,
+				21029DBF1E95AE3B00A6EF61 /* Frameworks */,
+				21029DC01E95AE3B00A6EF61 /* Resources */,
+				9B8B90CF03D5779FD177A911 /* [CP] Embed Pods Frameworks */,
+				30EE52A6852E7255555D276C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wen;
+			productName = Wen;
+			productReference = 21029DC21E95AE3B00A6EF61 /* Wen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21029DD51E95AE3B00A6EF61 /* WenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21029DE21E95AE3C00A6EF61 /* Build configuration list for PBXNativeTarget "WenTests" */;
+			buildPhases = (
+				7D42A39A37407639D78B3E5F /* [CP] Check Pods Manifest.lock */,
+				21029DD21E95AE3B00A6EF61 /* Sources */,
+				21029DD31E95AE3B00A6EF61 /* Frameworks */,
+				21029DD41E95AE3B00A6EF61 /* Resources */,
+				91B3726A3D5761EC12B0403B /* [CP] Embed Pods Frameworks */,
+				71DD840B81AEFD00D22487DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21029DD81E95AE3B00A6EF61 /* PBXTargetDependency */,
+			);
+			name = WenTests;
+			productName = WenTests;
+			productReference = 21029DD61E95AE3B00A6EF61 /* WenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21029DBA1E95AE3B00A6EF61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Josh Doman";
+				TargetAttributes = {
+					21029DC11E95AE3B00A6EF61 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = GZC25U6WG3;
+						ProvisioningStyle = Automatic;
+					};
+					21029DD51E95AE3B00A6EF61 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = GZC25U6WG3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21029DC11E95AE3B00A6EF61;
+					};
+				};
+			};
+			buildConfigurationList = 21029DBD1E95AE3B00A6EF61 /* Build configuration list for PBXProject "Wen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21029DB91E95AE3B00A6EF61;
+			productRefGroup = 21029DC31E95AE3B00A6EF61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21029DC11E95AE3B00A6EF61 /* Wen */,
+				21029DD51E95AE3B00A6EF61 /* WenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21029DC01E95AE3B00A6EF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21029DD01E95AE3B00A6EF61 /* LaunchScreen.storyboard in Resources */,
+				21029DCD1E95AE3B00A6EF61 /* Assets.xcassets in Resources */,
+				21597AB41E9827B2000217B4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21029DD41E95AE3B00A6EF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30EE52A6852E7255555D276C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wen/Pods-Wen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FB13EAAD469377E45F95E18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71DD840B81AEFD00D22487DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WenTests/Pods-WenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D42A39A37407639D78B3E5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91B3726A3D5761EC12B0403B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WenTests/Pods-WenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8B90CF03D5779FD177A911 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wen/Pods-Wen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21029DBE1E95AE3B00A6EF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21597AB71E9833D9000217B4 /* NetworkManager.swift in Sources */,
+				21029DE91E95B2A200A6EF61 /* Time.swift in Sources */,
+				21A279B61E99E805004C9FDF /* GeneralRegisterOrganizationController.swift in Sources */,
+				21029DED1E95B2B900A6EF61 /* DaySchedule.swift in Sources */,
+				2145BF2F1E99B2FE00C0B784 /* RegisterOrgNameController.swift in Sources */,
+				21029DFE1E95BF9500A6EF61 /* ScheduleCellHeaderView.swift in Sources */,
+				21A279B81E99E982004C9FDF /* RegisterOrgPhotoController.swift in Sources */,
+				21029DC81E95AE3B00A6EF61 /* ScheduleController.swift in Sources */,
+				21029DF71E95B4C000A6EF61 /* ScheduleTable.swift in Sources */,
+				21597A891E970348000217B4 /* GoogleNetworkManager.swift in Sources */,
+				21A279BA1E9ADB6D004C9FDF /* SyncOrgEventsController.swift in Sources */,
+				21029DF41E95B4C000A6EF61 /* AgendaLayout.swift in Sources */,
+				21597A911E971724000217B4 /* AppNavigationDrawerController.swift in Sources */,
+				21A279B41E99E0A4004C9FDF /* CreateNavigationController.swift in Sources */,
+				21A279C21E9B2720004C9FDF /* OrganizationSearchController.swift in Sources */,
+				2192C8BF1E96E19A00F081BF /* ScheduleController + Extensions.swift in Sources */,
+				21597A931E971773000217B4 /* LeftViewController.swift in Sources */,
+				21029DFB1E95B76100A6EF61 /* Extensions.swift in Sources */,
+				21A279C51E9B3CD8004C9FDF /* Organization.swift in Sources */,
+				21029DF61E95B4C000A6EF61 /* AgendaCell.swift in Sources */,
+				21029DC61E95AE3B00A6EF61 /* AppDelegate.swift in Sources */,
+				21029DEF1E95B47000A6EF61 /* ScheduleCell.swift in Sources */,
+				21029DEB1E95B2A800A6EF61 /* Event.swift in Sources */,
+				21A279BC1E9AE4ED004C9FDF /* ProgressSettings.swift in Sources */,
+				2192C8BD1E96DBD100F081BF /* AppSearchBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21029DD21E95AE3B00A6EF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21029DDB1E95AE3C00A6EF61 /* WenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21029DD81E95AE3B00A6EF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21029DC11E95AE3B00A6EF61 /* Wen */;
+			targetProxy = 21029DD71E95AE3B00A6EF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21029DCE1E95AE3B00A6EF61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21029DCF1E95AE3B00A6EF61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21029DDD1E95AE3C00A6EF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21029DDE1E95AE3C00A6EF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21029DE01E95AE3C00A6EF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC83A867B3FB96CCE14B50E9 /* Pods-Wen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GZC25U6WG3;
+				INFOPLIST_FILE = Wen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domanapps.Wen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wen-Briding-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21029DE11E95AE3C00A6EF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C520DCE3709F34B511799736 /* Pods-Wen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GZC25U6WG3;
+				INFOPLIST_FILE = Wen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domanapps.Wen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wen-Briding-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		21029DE31E95AE3C00A6EF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2779FB3C5368CEDFB26FBC62 /* Pods-WenTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GZC25U6WG3;
+				INFOPLIST_FILE = WenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domanapps.WenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wen.app/Wen";
+			};
+			name = Debug;
+		};
+		21029DE41E95AE3C00A6EF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5823C865980A2E4C5866AB7 /* Pods-WenTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GZC25U6WG3;
+				INFOPLIST_FILE = WenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domanapps.WenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wen.app/Wen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21029DBD1E95AE3B00A6EF61 /* Build configuration list for PBXProject "Wen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21029DDD1E95AE3C00A6EF61 /* Debug */,
+				21029DDE1E95AE3C00A6EF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21029DDF1E95AE3C00A6EF61 /* Build configuration list for PBXNativeTarget "Wen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21029DE01E95AE3C00A6EF61 /* Debug */,
+				21029DE11E95AE3C00A6EF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21029DE21E95AE3C00A6EF61 /* Build configuration list for PBXNativeTarget "WenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21029DE31E95AE3C00A6EF61 /* Debug */,
+				21029DE41E95AE3C00A6EF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21029DBA1E95AE3B00A6EF61 /* Project object */;
+}
